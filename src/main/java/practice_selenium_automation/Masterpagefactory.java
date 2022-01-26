@@ -15,8 +15,13 @@ public class Masterpagefactory {
 	@FindBy(xpath="//*[@class='input_error form_input']")
 	private WebElement username;
 	
-	@FindBy(xpath="//*[@id='password']")
+	//@FindBy(xpath="//*[@id='password']")
+	//private WebElement password;
+	
+	@FindBy(xpath="//*[contains(@id,'password')]")
 	private WebElement password;
+	
+	
 	
 	@FindBy(xpath="//*[@id='login-button']")
 	private WebElement login;

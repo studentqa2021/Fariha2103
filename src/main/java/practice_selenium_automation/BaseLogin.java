@@ -13,6 +13,7 @@ public class BaseLogin {
 		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get(BaseConfig.getconfig("URL"));
+		driver.manage().window().maximize();
 		
 		Masterpagefactory mpf= new Masterpagefactory(driver) ;
         
